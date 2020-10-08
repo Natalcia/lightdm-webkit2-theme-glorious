@@ -11,32 +11,32 @@ class Authenticate {
 
 	_returnRandomErrorMessages() {
 		const errorMessages = [
-			'Authentication failed!',
-			'You look stoopid.',
-			'This incident will be reported.',
-			'Why are you the way that you are?',
-			'This will self-destruct in 5 seconds!',
-			'Uhhh... are you sure you know what you are doing?',
-			'“You miss 100% of the shots you don\'t take – Wayne Gretzky – Michael Scott”',
-			'Get out of there, it\'s gonna blow!',
-			'I can do this all day.',
-			'You father is right. You are a disappointment...',
-			'PAM will lock you out...'
+			'Logowanie nieudane!',
+			'jwp od dzisiaj nie gra w warszawie koncertow, ZAKAZ',
+			'Ten incydent zostanie zgłoszony.',
+			'Czemu taki jesteś?',
+			'Masz ty wogóle rozum i godność człowieka?',
+			'Zdajesz sobie sprawę z tego co robisz?',
+			'“NIE, NIE DA SIE" – Aethus',
+			'Co to za screeny .wav',
+			'jestes sprawdzany masz 3 minuty na pobranie teeam viever 3',
+			'securitiest',
+			'Musisz odpalić speed hack w cheat engine'
 		];
 		return errorMessages[Math.floor(Math.random() * errorMessages.length)];	
 	}
 
 	_returnRandomSuccessfulMessages() {
 		const errorMessages = [
-			'Authentication success! Logging in!',
-			'Logging in! Biatch',
-			'Don\'t watch too much porn, bro.',
-			'Splish! Splash! Your password is trash!',
-			'Looking good today~',
-			'What are you doing, stepbro?~',
-			'You are someone\'s reason to smile.',
-			'Finally, someone with a good amount of IQ!',
-			'Please, don\'t watch porn.'
+			'No to jedziemy',
+			'Zalogowano!!!!!!111',
+			'W łapie mam karabin i między nogami kolba',
+			'gdzie nie muszę tam nie wlaze',
+			'Dzień dobry',
+			'Mordo jak tam zdrowie?',
+			'Siemano oyche doniz z tej strony',
+			'mamo na jutro trzeba bibule klej i blok a4',
+			'budynek chroniony przez orły mszczonowskie'
 		];
 		return errorMessages[Math.floor(Math.random() * errorMessages.length)];
 	}

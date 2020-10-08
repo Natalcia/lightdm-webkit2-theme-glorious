@@ -21,32 +21,32 @@ class Power {
 	_createPowerObject() {
 		this._powerObject = [
 			{
-				'name': 'Shutdown',
+				'name': 'Wyłącz',
 				'icon': 'shutdown',
 				'enabled': lightdm.can_shutdown,
 				'powerCommand': lightdm.shutdown,
-				'message': 'Shutting down...'
+				'message': 'Wyłączanie...'
 			},
 			{
-				'name': 'Reboot',
+				'name': 'Uruchom ponownie',
 				'icon': 'restart',
 				'enabled': lightdm.can_restart,
 				'powerCommand': lightdm.restart,
-				'message': 'Rebooting...'
+				'message': 'Ponowne uruchamianie...'
 			},
 			{
-				'name': 'Hibernate',
+				'name': 'Zahibernuj',
 				'icon': 'hibernate',
 				'enabled': lightdm.can_hibernate,
 				'powerCommand': lightdm.hibernate,
-				'message': 'Hibernating...'
+				'message': 'Hibernacja...'
 			},
 			{
-				'name': 'Suspend',
+				'name': 'Wstrzymaj',
 				'icon': 'suspend',
 				'enabled': lightdm.can_suspend,
 				'powerCommand': lightdm.suspend,
-				'message': 'Suspending...'
+				'message': 'Wstrzymywanie...'
 			}
 		];
 	}

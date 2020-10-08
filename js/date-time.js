@@ -10,28 +10,28 @@ class DateTime {
 		this._twentyFourMode = false;
 		this._clockUpdater = null;
 		this._monthsArr = [
-			'January',
-			'February',
-			'March',
-			'April',
-			'May',
-			'June',
-			'July',
-			'August',
-			'September',
-			'October',
-			'November',
-			'December'
+			'Styczeń',
+			'Luty',
+			'Marzec',
+			'Kwiecień',
+			'Maj',
+			'Czerwiec',
+			'Lipiec',
+			'Sierpień',
+			'Wrzesień',
+			'Październik',
+			'Listopad',
+			'Grudzień'
 		];
 
 		this._daysArr = [
-			'Sunday',
-			'Monday',
-			'Tuesday',
-			'Wednesday',
-			'Thursday',
-			'Friday',
-			'Saturday'
+			'Niedziela',
+			'Poniedziałek',
+			'Wtorek',
+			'Środa',
+			'Czwartek',
+			'Piątek',
+			'Sobota'
 		];
 
 		this._init();
@@ -61,11 +61,11 @@ class DateTime {
 		min = this._appendZero(min);
 
 		if (hour >= 6 && hour < 12) {
-			greeterSuffix = 'Morning';
+			greeterSuffix = 'ranka';
 		} else if (hour >= 12 && hour < 18) {
-			greeterSuffix = 'Afternoon';
+			greeterSuffix = 'popołudnia';
 		} else {
-			greeterSuffix = 'Evening';
+			greeterSuffix = 'wieczoru';
 		}
 
 		// 24-hour mode
@@ -82,9 +82,9 @@ class DateTime {
 		}
 		this._sidebarDate.innerText = `${this._daysArr[date.getDay()]}, ${this._monthsArr[date.getMonth()]} ` +
 			`${this._appendZero(date.getDate())}, ${date.getFullYear()}`;
-		this._greeterDate.innerText = `${this._getDayOrdinal(this._appendZero(date.getDate()))} of ` +
+		this._greeterDate.innerText = `${this._appendZero(date.getDate())} ` +
 			`${this._monthsArr[date.getMonth()]}, ${this._daysArr[date.getDay()]}`;
-		this._greeterMessage.innerText = `Good ${greeterSuffix}!`;
+		this._greeterMessage.innerText = `Miłego ${greeterSuffix}!`;
 	}
 
 	_startClock() {
